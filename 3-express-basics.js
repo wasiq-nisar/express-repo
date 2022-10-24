@@ -14,7 +14,7 @@ app.get('/about', (req, res) => {
 
 app.all('*', (req, res) => {
     //res.end('<h2>Resource Not Found...</h2>');  //But this will send a status of 200
-    res.status(404).send('<h2>Resource Not Found...</h2>')
+    res.status(404).send('Resource Not Found...')
 })
 
 
